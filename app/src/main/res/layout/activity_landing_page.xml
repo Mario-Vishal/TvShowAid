@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background"
+    android:padding="@dimen/standard_padding"
+    tools:context=".ui.landing.LandingPageActivity">
+
+    <TextView
+        android:id="@+id/signin_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tv Show Aid"
+        android:textSize="40dp"
+        android:textColorHighlight="@color/mario_blue"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin50"
+        android:layout_marginBottom="@dimen/margin50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/landing_page_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin50"
+        android:layout_marginBottom="@dimen/margin15"
+        app:layout_constraintTop_toBottomOf="@id/signin_app_title"
+        app:layout_constraintBottom_toTopOf="@+id/or"
+        />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textSize="@dimen/landing_page_input_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/dynamicButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/margin15"
+        />
+
+    <Button
+        android:id="@+id/dynamicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:elevation="0dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:padding="@dimen/standard_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_marginBottom="100dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

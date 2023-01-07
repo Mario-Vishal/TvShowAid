@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background"
+    android:id="@+id/tv_show_activity_layout"
+    android:isScrollContainer="true"
+    tools:context=".ui.home.tvshow.TvShowActivity">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_background"
+        android:isScrollContainer="true"
+        tools:context=".ui.home.tvshow.TvShowActivity">
+
+        <ImageView
+            android:id="@+id/tv_show_activity_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.2"
+            />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/tv_show_activity_toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fitsSystemWindows="true"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/tv_show_activity_collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@android:color/transparent"
+                app:title="Mario"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/tv_show_activity_banner"
+                        android:layout_width="match_parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/tv_show_activity_image"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"
+                            android:scaleType="fitXY"
+                            app:layout_constraintBottom_toTopOf="@id/tv_show_activity_header"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/tv_show_activity_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_show_activity_image"
+
+                            android:padding="@dimen/margin15">
+
+                            <TextView
+                                android:id="@+id/tv_show_activity_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:text="Mario The Legend"
+                                android:textColor="@color/white"
+                                android:textSize="25sp" />
+
+                            <LinearLayout
+                                android:id="@+id/tv_show_activity_btn_row"
+                                android:layout_weight="0.3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/tv_show_activity_fav_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".1"
+                                    android:src="@android:drawable/btn_star" />
+
+                                <ImageView
+                                    android:id="@+id/tv_show_activity_fav_watch_list_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".1"
+
+                                    android:src="@android:drawable/ic_menu_add" />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tv_show_activity_tablayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/back_aplha_0.35"
+                        app:layout_constraintTop_toBottomOf="@id/tv_show_activity_banner"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/tv_show_activity_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/tv_show_activity_toolbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

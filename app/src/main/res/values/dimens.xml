@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sign_in_username_margin_top">200dp</dimen>
+    <dimen name="margin50">50dp</dimen>
+    <dimen name="standard_padding">15dp</dimen>
+    <dimen name="margin15">15dp</dimen>
+</resources>
