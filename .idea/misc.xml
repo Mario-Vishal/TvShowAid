@@ -4,10 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/drawable/base_bottom_nav_item_selected_color.xml" value="0.2225" />
+        <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/drawable/ic_add.xml" value="0.2045" />
+        <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/drawable/ic_add_white.xml" value="0.2045" />
+        <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/drawable/ic_favorite_white.xml" value="0.2045" />
+        <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/drawable/image_shadow.xml" value="0.2045" />
         <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/layout/activity_base.xml" value="0.25" />
         <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/layout/activity_landing_page.xml" value="0.25" />
         <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/layout/activity_tv_show.xml" value="0.25" />
+        <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/layout/activity_tv_show.xml" value="0.264" />
+        <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/layout/activity_tv_show_v1.xml" value="0.176" />
         <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/layout/fragment_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/layout/fragment_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/mario/Documents/TvShowAid/app/src/main/res/layout/fragment_tv_show_about.xml" value="0.25" />
